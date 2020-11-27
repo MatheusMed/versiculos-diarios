@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "147883240404",
+    "firebase_url": "https://versiculodiario-580fc.firebaseio.com",
+    "project_id": "versiculodiario-580fc",
+    "storage_bucket": "versiculodiario-580fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147883240404:android:8b52a957c847ee472c4441",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "147883240404-2pd8ou3kphp2h7orkb4brrrcs7enc73a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAovfh0MDXmjqTdSA4nA-e0NDykbVfAJQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "147883240404-2pd8ou3kphp2h7orkb4brrrcs7enc73a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147883240404:android:70557e317da7d2002c4441",
+        "android_client_info": {
+          "package_name": "com.example.todo_dia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "147883240404-2pd8ou3kphp2h7orkb4brrrcs7enc73a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAovfh0MDXmjqTdSA4nA-e0NDykbVfAJQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "147883240404-2pd8ou3kphp2h7orkb4brrrcs7enc73a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

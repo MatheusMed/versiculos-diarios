@@ -1,0 +1,20 @@
+# Referenced at /home/matheus/Flutter/frases-diarias/build/app/intermediates/merged_manifests/release/arm64-v8a/AndroidManifest.xml:16
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at /home/matheus/Flutter/frases-diarias/build/app/intermediates/merged_manifests/release/arm64-v8a/AndroidManifest.xml:16
+-keep class androidx.multidex.MultiDexApplication { <init>(); }
+# Referenced at /home/matheus/Flutter/frases-diarias/build/app/intermediates/merged_manifests/release/arm64-v8a/AndroidManifest.xml:21
+-keep class com.example.todo_dia.MainActivity { <init>(); }
+# Referenced at /home/matheus/Flutter/frases-diarias/build/app/intermediates/merged_manifests/release/arm64-v8a/AndroidManifest.xml:112
+-keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
+# Referenced at /home/matheus/Flutter/frases-diarias/build/app/intermediates/merged_manifests/release/arm64-v8a/AndroidManifest.xml:102
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+# Referenced at /home/matheus/Flutter/frases-diarias/build/app/intermediates/merged_manifests/release/arm64-v8a/AndroidManifest.xml:108
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+# Referenced at /home/matheus/Flutter/frases-diarias/build/app/intermediates/merged_manifests/release/arm64-v8a/AndroidManifest.xml:63
+-keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
+# Referenced at /home/matheus/Flutter/frases-diarias/build/app/intermediates/merged_manifests/release/arm64-v8a/AndroidManifest.xml:95
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
+# Referenced at /home/matheus/Flutter/frases-diarias/build/app/intermediates/merged_manifests/release/arm64-v8a/AndroidManifest.xml:86
+-keep class io.flutter.plugins.share.ShareFileProvider { <init>(); }
+# Referenced at /home/matheus/Flutter/frases-diarias/build/app/intermediates/merged_manifests/release/arm64-v8a/AndroidManifest.xml:81
+-keep class io.flutter.plugins.urllauncher.WebViewActivity { <init>(); }
