@@ -35,7 +35,6 @@ class HomeNavigation extends GetView<HomeController> {
     } else {
       tamanho = Get.height * 0.4;
     }
-
     return ListView.builder(
       itemCount: controller.listPaginada.length,
       itemBuilder: (context, index) {

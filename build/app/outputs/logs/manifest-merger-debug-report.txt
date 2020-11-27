@@ -1,11 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:1:1-41:12
-INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:1:1-41:12
-INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:1:1-41:12
-INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:1:1-41:12
-MERGED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:1:1-41:12
+ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:1:1-44:12
+INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:1:1-44:12
+INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:1:1-44:12
+INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:1:1-44:12
+MERGED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:1:1-44:12
 MERGED from [:url_launcher] /home/matheus/Flutter/frases-diarias/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
 MERGED from [:share] /home/matheus/Flutter/frases-diarias/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-19:12
 MERGED from [:path_provider] /home/matheus/Flutter/frases-diarias/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.multidex:multidex:2.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/5e44f643e5d1e68aa83236c46ded5dc3/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
@@ -27,6 +28,7 @@ MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/matheus/.g
 MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/52aa99b1dafefeb265871aa9c67401a0/firebase-measurement-connector-18.0.0/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/7c48ed08d25ac3d97c66ed317bab5736/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.1.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/2a043d3f5fd22167e021cf30806b5be9/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.1.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/dbc71f212c14e03890a98cb89be3c094/media-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/f333fff089a65883db4369ab04866b77/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/be0a3d96e69806a17dd3ec618a610bb9/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/f4b054b692c01d60cfa1b25a7210754e/loader-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -44,6 +46,7 @@ MERGED from [com.google.firebase:firebase-components:16.0.1] /home/matheus/.grad
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/d3eb63bf853c789a48d650b747031fff/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/03e26697d0a6e1eb3912dab2156c8fb7/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/a44cec94aaed465518ad794d0c43f508/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] /home/matheus/.gradle/caches/transforms-2/files-2.1/2c8f02a05a753c4c0058195e05abc64f/threetenabp-1.2.3/AndroidManifest.xml:2:1-9:12
 INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/debug/AndroidManifest.xml:1:1-7:12
@@ -53,18 +56,20 @@ INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/debug/Android
 		INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:1:1-41:12
+		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:1:1-44:12
 		INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:1:1-41:12
+		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:1:1-44:12
 		INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:1:11-69
 application
-ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:3:4-40:19
+ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:3:4-43:19
 MERGED from [:url_launcher] /home/matheus/Flutter/frases-diarias/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
 MERGED from [:url_launcher] /home/matheus/Flutter/frases-diarias/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+MERGED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:share] /home/matheus/Flutter/frases-diarias/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
 MERGED from [:share] /home/matheus/Flutter/frases-diarias/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:18.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/450a90c2fdd0688b2b2f3882465a721c/firebase-analytics-ktx-18.0.0/AndroidManifest.xml:7:5-15:19
@@ -101,6 +106,8 @@ MERGED from [androidx.core:core:1.3.1] /home/matheus/.gradle/caches/transforms-2
 MERGED from [androidx.core:core:1.3.1] /home/matheus/.gradle/caches/transforms-2/files-2.1/9d8d89607511d301a4ba7c9190a3d50d/core-1.3.1/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/8b41debddbd50aa307dba0f241fef08b/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/8b41debddbd50aa307dba0f241fef08b/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] /home/matheus/.gradle/caches/transforms-2/files-2.1/2c8f02a05a753c4c0058195e05abc64f/threetenabp-1.2.3/AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] /home/matheus/.gradle/caches/transforms-2/files-2.1/2c8f02a05a753c4c0058195e05abc64f/threetenabp-1.2.3/AndroidManifest.xml:7:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] /home/matheus/.gradle/caches/transforms-2/files-2.1/9d8d89607511d301a4ba7c9190a3d50d/core-1.3.1/AndroidManifest.xml:24:18-86
 	android:label
@@ -108,7 +115,11 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/mathe
 	android:icon
 		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:5:9-43
 activity#com.example.todo_dia.MainActivity
-ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:6:9-34:20
+ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:6:9-37:20
+	android:turnScreenOn
+		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:14:13-40
+	android:showWhenLocked
+		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:13:13-42
 	android:launchMode
 		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:8:13-43
 	android:hardwareAccelerated
@@ -122,39 +133,41 @@ ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidMani
 	android:name
 		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:7:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:17:13-20:17
+ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:20:13-23:17
 	android:resource
-		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:19:15-52
+		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:22:15-52
 	android:name
-		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:18:15-70
+		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:21:15-70
 meta-data#io.flutter.embedding.android.SplashScreenDrawable
-ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:26:13-29:17
+ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:29:13-32:17
 	android:resource
-		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:28:15-61
+		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:31:15-61
 	android:name
-		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:27:15-79
+		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:30:15-79
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:30:13-33:29
+ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:33:13-36:29
 action#android.intent.action.MAIN
-ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:31:17-68
+ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:34:17-68
 	android:name
-		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:31:25-66
+		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:34:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:32:17-76
+ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:35:17-76
 	android:name
-		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:32:27-74
+		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:35:27-74
 meta-data#flutterEmbedding
-ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:37:9-39:33
+ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:40:9-42:33
 	android:value
-		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:39:13-30
+		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:42:13-30
 	android:name
-		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:38:13-44
+		ADDED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml:41:13-44
 uses-sdk
 INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/main/AndroidManifest.xml
 MERGED from [:url_launcher] /home/matheus/Flutter/frases-diarias/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher] /home/matheus/Flutter/frases-diarias/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:share] /home/matheus/Flutter/frases-diarias/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:share] /home/matheus/Flutter/frases-diarias/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] /home/matheus/Flutter/frases-diarias/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
@@ -197,6 +210,8 @@ MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/matheus
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/7c48ed08d25ac3d97c66ed317bab5736/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/2a043d3f5fd22167e021cf30806b5be9/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/2a043d3f5fd22167e021cf30806b5be9/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.1.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/dbc71f212c14e03890a98cb89be3c094/media-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.1.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/dbc71f212c14e03890a98cb89be3c094/media-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/f333fff089a65883db4369ab04866b77/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/f333fff089a65883db4369ab04866b77/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/be0a3d96e69806a17dd3ec618a610bb9/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
@@ -231,6 +246,8 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/m
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/03e26697d0a6e1eb3912dab2156c8fb7/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/a44cec94aaed465518ad794d0c43f508/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/matheus/.gradle/caches/transforms-2/files-2.1/a44cec94aaed465518ad794d0c43f508/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] /home/matheus/.gradle/caches/transforms-2/files-2.1/2c8f02a05a753c4c0058195e05abc64f/threetenabp-1.2.3/AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] /home/matheus/.gradle/caches/transforms-2/files-2.1/2c8f02a05a753c4c0058195e05abc64f/threetenabp-1.2.3/AndroidManifest.xml:5:5-44
 INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/debug/AndroidManifest.xml
 INJECTED from /home/matheus/Flutter/frases-diarias/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -261,6 +278,44 @@ ADDED from [:url_launcher] /home/matheus/Flutter/frases-diarias/build/url_launch
 		ADDED from [:url_launcher] /home/matheus/Flutter/frases-diarias/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
 	android:name
 		ADDED from [:url_launcher] /home/matheus/Flutter/frases-diarias/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-66
+	android:name
+		ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-63
+uses-permission#android.permission.USE_FULL_SCREEN_INTENT
+ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-78
+receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver
+ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-106
+	android:name
+		ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:12:19-103
+receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver
+ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-20:20
+	android:name
+		ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:13:19-107
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.MY_PACKAGE_REPLACED+action:name:android.intent.action.QUICKBOOT_POWERON+action:name:com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-19:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-79
+	android:name
+		ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:15:25-76
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-84
+	android:name
+		ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:16:25-81
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:17:25-79
+action#com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-82
+	android:name
+		ADDED from [:flutter_local_notifications] /home/matheus/Flutter/frases-diarias/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:18:25-79
 provider#io.flutter.plugins.share.ShareFileProvider
 ADDED from [:share] /home/matheus/Flutter/frases-diarias/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
 	android:grantUriPermissions
