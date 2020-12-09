@@ -1,4 +1,4 @@
-#Fri Nov 27 14:50:10 BRT 2020
+#Wed Dec 09 14:23:26 BRT 2020
 base.0=/home/matheus/Flutter/frases-diarias/build/app/intermediates/transforms/r8/release/0/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

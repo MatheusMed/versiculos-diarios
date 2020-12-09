@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:todo_dia/app/global/widgets/navigation_item.dart';
+import 'package:todo_dia/app/model/palavra.dart';
 import 'package:todo_dia/app/model/versiculo.dart';
 import 'package:todo_dia/app/repository/versiculo_repository.dart';
 import 'package:todo_dia/app/theme/app_theme.dart';
@@ -15,8 +16,13 @@ class HomeController extends GetxController {
   final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
       FlutterLocalNotificationsPlugin();
 
+  RxBool loading = true.obs;
+
   static HomeController get to => Get.find();
   final _versiculoRepository = Get.find<VersiculoRepository>();
+
+  RxList _palavraPaginada = RxList<Palavra>();
+  RxList<Palavra> get listPalavraPaginada => _palavraPaginada;
 
   RxList _listPaginada = RxList<Versiculo>();
   RxList<Versiculo> get listPaginada => _listPaginada;
@@ -43,7 +49,6 @@ class HomeController extends GetxController {
         importance: Importance.max,
       ),
     );
-
     await this.flutterLocalNotificationsPlugin.zonedSchedule(
           0,
           "Bom Dia!",
@@ -59,16 +64,16 @@ class HomeController extends GetxController {
 
   tz.TZDateTime _netxinstacenceofFriday() {
     tz.TZDateTime scheduleDate = _nextInstaceOftenAm();
-    while (scheduleDate.weekday != DateTime.friday) {
-      scheduleDate = scheduleDate.add(Duration(days: 1));
-    }
+    // while (scheduleDate.weekday != DateTime.sunday) {
+    //   scheduleDate = scheduleDate.add(Duration(days: 1));
+    // }
     return scheduleDate;
   }
 
   _nextInstaceOftenAm() {
     final tz.TZDateTime now = tz.TZDateTime.now(tz.local);
     tz.TZDateTime scheduleDate =
-        tz.TZDateTime(tz.local, now.year, now.month, now.day, 7, 30);
+        tz.TZDateTime(tz.local, now.year, now.month, now.day, 07, 30);
     if (scheduleDate.isBefore(now)) {
       scheduleDate = scheduleDate.add(Duration(days: 1));
     }
@@ -79,6 +84,10 @@ class HomeController extends GetxController {
     _versiculoRepository
         .getVersiculosPaginados()
         .then((v) => _listPaginada.assignAll(v))
+        .catchError((e) => print('Error $e'));
+    _versiculoRepository
+        .getPalavraPaginados()
+        .then((v) => _palavraPaginada.assignAll(v))
         .catchError((e) => print('Error $e'));
     Get.snackbar(
       "",
@@ -119,12 +128,12 @@ class HomeController extends GetxController {
   List<NavigationItem> items = [
     NavigationItem(Icon(CommunityMaterialIcons.book_open_page_variant),
         Text('Versiculo'), txtSobreColor),
+    // NavigationItem(
+    //     Icon(CommunityMaterialIcons.book), Text('Palvara'), txtSobreColor),
     NavigationItem(
         Icon(CommunityMaterialIcons.information), Text('Sobre'), txtSobreColor),
     NavigationItem(
         Icon(CommunityMaterialIcons.cogs), Text('Ajustes'), txtSobreColor),
-    // NavigationItem(
-    //     Icon(Icons.person_outline), Text('Profile'), Colors.cyanAccent),
   ];
 
   void mudarIndex(int index) => selectedIndex.value = index;
@@ -135,42 +144,15 @@ class HomeController extends GetxController {
         .getVersiculosPaginados()
         .then(_listPaginada.addAll)
         .catchError((e) => print('Error $e'));
+    _versiculoRepository
+        .getPalavraPaginados()
+        .then(_palavraPaginada.addAll)
+        .catchError((e) => print('Error $e'));
     notifiInit();
     scheduleDayNotification();
     super.onInit();
   }
-
-  @override
-  void onReady() {
-    Get.snackbar(
-      'Atualizar os versiculos',
-      'Puxe para baixo para atualizar os versiculos diariamente!',
-      backgroundColor: appTheme.accentColor,
-      colorText: txtColor,
-      snackPosition: SnackPosition.BOTTOM,
-      snackStyle: SnackStyle.GROUNDED,
-    );
-    super.onReady();
-  }
 }
-
-// defaultDialog(
-//         title: 'Atualizar os versiculos',
-//         titleStyle: TextStyle(color: txtColor),
-//         confirm: InkWell(
-//           borderRadius: BorderRadius.circular(50),
-//           onTap: () {
-//             if (Get.isDialogOpen) {
-//               Get.back();
-//             }
-//           },
-//           child: Icon(CommunityMaterialIcons.check),
-//         ),
-//         backgroundColor: appTheme.accentColor,
-//         content: Container(
-//           child: Text('Atualize os versiculos puxando para baixo',
-//               style: TextStyle(color: txtColor)),
-//         ));
 
 //chamar notificicaçao
 // Future<void> showNotification(String title) async {

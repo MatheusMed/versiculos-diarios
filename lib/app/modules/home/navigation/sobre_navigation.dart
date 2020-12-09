@@ -30,7 +30,7 @@ class SobreNavigation extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(left: 10),
               child: Text(
-                'Esse aplicativo tem a finalidade de compartilhar versiculos bíblicos diários lhe incentivando a ler a palavra de Deus, bem como,levando uma palavra de fé e esperança para a sua vida. ',
+                'Esse aplicativo tem a finalidade de compartilhar versiculos bíblicos diários lhe incentivando a ler a palavra de Deus, bem como,levar a palavra de fé e esperança para a sua vida. ',
                 style: GoogleFonts.robotoCondensed(
                     color: txtSobreColor,
                     fontSize: 20,
@@ -39,65 +39,73 @@ class SobreNavigation extends StatelessWidget {
             ),
             CustomDivider(),
             SizedBox(height: 5),
-            GestureDetector(
-              onTap: () async {
-                const insta = "https://www.instagram.com/mtheus_mdeiros/";
-                if (await canLaunch(insta)) {
-                  await launch(insta);
-                }
-              },
-              child: Container(
-                margin: EdgeInsets.only(left: 10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Icon(CommunityMaterialIcons.instagram, color: Colors.black),
-                    SizedBox(width: 10),
-                    Text(
-                      'Siga-me nas redes social ',
-                      style: GoogleFonts.firaSans(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
+            Container(
+              margin: EdgeInsets.only(left: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  OutlineButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(7),
                     ),
-                  ],
-                ),
+                    color: appTheme.backgroundColor,
+                    onPressed: () async {
+                      const insta = "https://www.instagram.com/mtheus_mdeiros/";
+                      if (await canLaunch(insta)) {
+                        await launch(insta);
+                      }
+                    },
+                    child: Icon(
+                      CommunityMaterialIcons.instagram,
+                      color: appTheme.accentColor,
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  Text(
+                    'Siga-me nas redes social ',
+                    style: GoogleFonts.firaSans(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
               ),
             ),
             SizedBox(height: 10),
-            GestureDetector(
-              onTap: () async {
-                const insta =
-                    "https://www.instagram.com/igrejabelavistaocara/?hl=pt-br";
-                if (await canLaunch(insta)) {
-                  await launch(insta);
-                }
-              },
-              child: Container(
-                margin: EdgeInsets.only(left: 10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Icon(CommunityMaterialIcons.instagram, color: Colors.black),
-                    SizedBox(width: 10),
-                    Text(
-                      'Ministério Bela Vista',
-                      style: GoogleFonts.firaSans(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
+            Container(
+              margin: EdgeInsets.only(left: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  OutlineButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(7),
                     ),
-                  ],
-                ),
+                    color: appTheme.backgroundColor,
+                    onPressed: () async {
+                      const insta =
+                          "https://www.instagram.com/igrejabelavistaocara/?hl=pt-br";
+                      if (await canLaunch(insta)) {
+                        await launch(insta);
+                      }
+                    },
+                    child: Icon(
+                      CommunityMaterialIcons.instagram,
+                      color: appTheme.accentColor,
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  Text(
+                    'Assembleia de Deus BV',
+                    style: GoogleFonts.firaSans(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
               ),
             ),
             SizedBox(height: 25),
-            Center(
-              child: Text(
-                'Obrigado por usar esse aplicativo!',
-                style: GoogleFonts.robotoCondensed(fontSize: 20),
-              ),
-            ),
           ],
         ),
       ),

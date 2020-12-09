@@ -3,6 +3,5 @@ part of 'app_pages.dart';
 
 abstract class Routes {
   static const HOME = '/home';
-  static const PALAVRAS = '/palavras';
-  static const VERSICULO_PAGE = '/versiculo-page';
+  static const PALAVRAPAGE = '/palavrapage';
 }

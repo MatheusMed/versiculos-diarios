@@ -7,7 +7,7 @@ import 'package:todo_dia/app/repository/versiculo_repository.dart';
 class HomeBinding implements Bindings {
   @override
   void dependencies() {
-    Get.lazyPut<HomeController>(() => HomeController());
+    Get.lazyPut<HomeController>(() => HomeController(), fenix: true);
     Get.lazyPut<HasuraSettings>(() => HasuraSettings());
     Get.lazyPut<VersiculoRepository>(() => VersiculoRepository());
   }
