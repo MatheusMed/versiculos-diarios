@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.todo_dia">
+    package="com.versiculo_diario">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="Versiculo Diario"
+        android:label="Versículo Diário"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

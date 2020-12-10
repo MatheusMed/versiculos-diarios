@@ -1,4 +1,4 @@
-package com.example.todo_dia
+package com.versiculo_diario
 
 import io.flutter.embedding.android.FlutterActivity
 

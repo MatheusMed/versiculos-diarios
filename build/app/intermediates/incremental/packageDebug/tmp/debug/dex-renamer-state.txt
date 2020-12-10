@@ -1,4 +1,4 @@
-#Wed Dec 09 14:34:40 BRT 2020
+#Thu Dec 10 08:45:41 BRT 2020
 base.0=/home/matheus/Flutter/frases-diarias/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.1=classes2.dex
 renamed.1=classes2.dex

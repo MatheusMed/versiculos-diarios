@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:share/share.dart';
-
+import 'package:shimmer/shimmer.dart';
 import 'package:todo_dia/app/global/widgets/custom_text.dart';
 import 'package:todo_dia/app/model/versiculo.dart';
 import 'package:todo_dia/app/modules/home/controllers/home_controller.dart';
@@ -38,25 +38,25 @@ class HomeNavigation extends GetView<HomeController> {
     }
 
     if (controller.listPaginada.isEmpty) {
-      return Center(
-        child: Container(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'Carregando os Versiculos Por Favor Aguarde',
-                style: GoogleFonts.poppins(
-                  fontSize: 15,
+      return Shimmer.fromColors(
+          child: ListView.builder(
+            itemCount: 5,
+            itemBuilder: (BuildContext context, int index) {
+              return Container(
+                margin: EdgeInsets.only(bottom: 10),
+                padding: EdgeInsets.all(10),
+                height: tamanho,
+                decoration: BoxDecoration(
                   color: appTheme.accentColor,
-                  fontWeight: FontWeight.bold,
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(10),
+                  ),
                 ),
-              ),
-              SizedBox(height: 30),
-              CircularProgressIndicator(),
-            ],
+              );
+            },
           ),
-        ),
-      );
+          baseColor: appTheme.accentColor,
+          highlightColor: appTheme.backgroundColor);
     }
     return ListView.builder(
       itemCount: controller.listPaginada.length,
