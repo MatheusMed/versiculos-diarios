@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 final ThemeData appTheme = ThemeData(
-  primarySwatch: Colors.brown,
+  primarySwatch: Colors.blue,
   brightness: Brightness.light,
-  primaryColor: Color(0xff795548),
+  primaryColor: Color(0xff2196f3),
   primaryColorBrightness: Brightness.dark,
-  primaryColorLight: Color(0xffd7ccc8),
-  primaryColorDark: Color(0xff5d4037),
-  accentColor: Color(0xff795548),
+  primaryColorLight: Color(0xffbbdefb),
+  primaryColorDark: Color(0xff1976d2),
+  accentColor: Color(0xff2196f3),
   accentColorBrightness: Brightness.dark,
   canvasColor: Color(0xfffafafa),
   scaffoldBackgroundColor: Color(0xfffafafa),
@@ -20,15 +20,20 @@ final ThemeData appTheme = ThemeData(
   unselectedWidgetColor: Color(0x8a000000),
   disabledColor: Color(0x61000000),
   buttonColor: Color(0xffe0e0e0),
-  toggleableActiveColor: Color(0xff6d4c41),
-  secondaryHeaderColor: Color(0xffefebe9),
-  backgroundColor: Color(0xffbcaaa4),
+  toggleableActiveColor: Color(0xff1e88e5),
+  secondaryHeaderColor: Color(0xffe3f2fd),
+  textSelectionColor: Color(0xff90caf9),
+  cursorColor: Color(0xff4285f4),
+  textSelectionHandleColor: Color(0xff64b5f6),
+  backgroundColor: Color(0xFFFFFFFF),
   dialogBackgroundColor: Color(0xffffffff),
-  indicatorColor: Color(0xff795548),
+  indicatorColor: Color(0xff2196f3),
   hintColor: Color(0x8a000000),
   errorColor: Color(0xffd32f2f),
 );
 const txtColor = Color(0xFFFFFFFF);
-const txtDraweColor = Color(0xFFE6BFB3);
-const txtSobreColor = Color(0xFF352C29);
+const txtSecundColor = Color(0xFF000000);
+const navColor = Color(0xFFFFFFFF);
+const txtDraweColor = Color(0xFF000000);
+const txtSobreColor = Color(0xB60059FF);
 const whiteColor = Color(0xFF5b72cb);

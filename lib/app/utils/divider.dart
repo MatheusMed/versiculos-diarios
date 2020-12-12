@@ -7,7 +7,7 @@ class CustomDivider extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(5),
       child: Divider(
-        color: appTheme.accentColor,
+        color: txtSecundColor,
         endIndent: 10,
         indent: 10,
       ),

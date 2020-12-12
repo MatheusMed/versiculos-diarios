@@ -16,8 +16,6 @@ class HomeController extends GetxController {
   final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
       FlutterLocalNotificationsPlugin();
 
-  RxBool loading = true.obs;
-
   static HomeController get to => Get.find();
   final _versiculoRepository = Get.find<VersiculoRepository>();
 
@@ -39,7 +37,7 @@ class HomeController extends GetxController {
     this.flutterLocalNotificationsPlugin.initialize(initializationSettings);
   }
 
-  Future<void> scheduleDayNotification(/*String title, String body*/) async {
+  Future<void> scheduleDayNotification() async {
     final details = NotificationDetails(
       android: AndroidNotificationDetails(
         "id",
@@ -51,8 +49,8 @@ class HomeController extends GetxController {
     );
     await this.flutterLocalNotificationsPlugin.zonedSchedule(
           0,
-          "Bom Dia!",
-          "Veja seu versiculo Diário!",
+          "Bom Dia",
+          "Veja Seu Versículo Diário",
           _netxinstacenceofFriday(),
           details,
           uiLocalNotificationDateInterpretation:
@@ -123,7 +121,7 @@ class HomeController extends GetxController {
   }
 
   RxInt selectedIndex = 0.obs;
-  Color backgroundColorNav = txtColor;
+  Color backgroundColorNav = navColor;
 
   List<NavigationItem> items = [
     NavigationItem(Icon(CommunityMaterialIcons.book_open_page_variant),
@@ -137,6 +135,10 @@ class HomeController extends GetxController {
   ];
 
   void mudarIndex(int index) => selectedIndex.value = index;
+
+  void changeTheme() {
+    Get.changeTheme(Get.isDarkMode ? ThemeData.light() : ThemeData.dark());
+  }
 
   @override
   void onInit() async {

@@ -22,7 +22,7 @@ class HomeView extends GetView<HomeController> {
               () => Visibility(
                 visible: controller.selectedIndex.value == 0,
                 child: Text(
-                  'Versiculo Diário',
+                  'Versículo Diário',
                   style: GoogleFonts.firaSans(),
                 ),
               ),

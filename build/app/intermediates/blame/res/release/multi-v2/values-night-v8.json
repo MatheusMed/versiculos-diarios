@@ -6,20 +6,17 @@
                 {
                     "source": "/home/matheus/Flutter/frases-diarias/android/app/src/main/res/values-night/styles.xml",
                     "from": {
-                        "startLines": "3,15",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,821",
-                        "endLines": "7,18",
-                        "endColumns": "12,12",
-                        "endOffsets": "465,993"
+                        "startLines": "-1,-1",
+                        "startColumns": "-1,-1",
+                        "startOffsets": "-1,-1"
                     },
                     "to": {
-                        "startLines": "3,8",
+                        "startLines": "3,7",
                         "startColumns": "4,4",
-                        "startOffsets": "102,399",
-                        "endLines": "7,11",
+                        "startOffsets": "102,283",
+                        "endLines": "6,10",
                         "endColumns": "12,12",
-                        "endOffsets": "394,571"
+                        "endOffsets": "278,455"
                     }
                 },
                 {

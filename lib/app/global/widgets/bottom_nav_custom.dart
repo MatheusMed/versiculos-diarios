@@ -11,7 +11,7 @@ class BottomNavCustom extends GetView<HomeController> {
       height: 56,
       padding: EdgeInsets.only(left: 8, top: 4, bottom: 4, right: 8),
       decoration: BoxDecoration(
-          color: appTheme.accentColor,
+          color: appTheme.primaryColor,
           boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)]),
       width: Get.width,
       child: Obx(

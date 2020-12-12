@@ -8,6 +8,7 @@ import 'package:todo_dia/app/global/widgets/custom_text.dart';
 import 'package:todo_dia/app/model/versiculo.dart';
 import 'package:todo_dia/app/modules/home/controllers/home_controller.dart';
 import 'package:todo_dia/app/theme/app_theme.dart';
+
 import 'package:todo_dia/app/utils/divider.dart';
 
 class HomeNavigation extends GetView<HomeController> {
@@ -57,190 +58,181 @@ class HomeNavigation extends GetView<HomeController> {
           ),
           baseColor: appTheme.accentColor,
           highlightColor: appTheme.backgroundColor);
-    }
-    return ListView.builder(
-      itemCount: controller.listPaginada.length,
-      itemBuilder: (context, index) {
-        Versiculo versiculo = controller.listPaginada[index];
-        // Palavra palavra = controller.listPalavraPaginada[index];
-        return GestureDetector(
-          onTap: () {
-            Get.defaultDialog(
-              title: 'Versículo Diário',
-              confirm: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  MaterialButton(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    color: Colors.transparent,
-                    onPressed: () {
-                      Share.share(
-                          '${versiculo.referencia} \n${versiculo.versiculos} \nObrigado Por usar o Versiculo Diário!',
-                          sharePositionOrigin:
-                              box.localToGlobal(Offset.zero) & box.size);
-                    },
-                    child: Icon(CommunityMaterialIcons.share_all_outline,
-                        color: Colors.white),
-                  ),
-                  MaterialButton(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(7),
-                    ),
-                    color: Colors.transparent,
-                    onPressed: () {
-                      Get.dialog(SafeArea(
-                        child: Scaffold(
-                          appBar: AppBar(
-                            title: Text(
-                                '${controller.listPalavraPaginada[index].titulo}'),
-                            centerTitle: true,
-                          ),
-                          body: Container(
-                            padding: EdgeInsets.all(10),
-                            child: ListView(
-                              children: [
-                                Text(
-                                  '${versiculo.versiculos}',
-                                  style: GoogleFonts.poppins(
-                                    fontSize: 18,
-                                    color: appTheme.accentColor,
-                                    fontWeight: FontWeight.w600,
-                                  ),
-                                ),
-                                Row(
-                                    mainAxisAlignment: MainAxisAlignment.end,
-                                    children: [
-                                      Text(
-                                        '${versiculo.referencia}',
-                                        style: GoogleFonts.poppins(
-                                          fontSize: 14,
-                                          color: appTheme.accentColor,
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                      )
-                                    ]),
-                                CustomDivider(),
-                                Column(children: [
-                                  Text(
-                                    '${controller.listPalavraPaginada[index].palavras}',
-                                    style: GoogleFonts.poppins(
-                                      fontSize: 25,
-                                      color: appTheme.accentColor,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                  ),
-                                ]),
-                                CustomDivider(),
-                                Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Text(
-                                        'Autor: ${controller.listPalavraPaginada[index].autor}',
-                                        style: GoogleFonts.poppins(
-                                          fontSize: 18,
-                                          color: appTheme.accentColor,
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                      ),
-                                    ])
-                              ],
-                            ),
-                          ),
-                        ),
-                      ));
-                    },
-                    child: Row(
-                      children: [
-                        Text(
-                          'Palavra',
-                          style: GoogleFonts.poppins(
-                            color: Colors.white,
-                          ),
-                        ),
-                        SizedBox(width: 2),
-                        Icon(
-                          Icons.arrow_forward,
-                          color: txtColor,
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              titleStyle: TextStyle(color: txtColor),
-              backgroundColor: appTheme.accentColor,
-              content: Container(
-                padding: EdgeInsets.all(5),
-                child: Column(
+    } else if (controller.listPaginada.isNotEmpty) {
+      return ListView.builder(
+        itemCount: controller.listPaginada.length,
+        itemBuilder: (context, index) {
+          Versiculo versiculo = controller.listPaginada[index];
+          // Palavra palavra = controller.listPalavraPaginada[index];
+          return GestureDetector(
+            onTap: () {
+              Get.defaultDialog(
+                title: 'Versículo Diário',
+                confirm: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    CustomText(
-                      text: '${versiculo.referencia}',
-                      cor: txtDraweColor,
-                      tFont: 18,
-                    ),
-                    SizedBox(height: 5),
-                    Text(
-                      '${versiculo.versiculos}',
-                      style: GoogleFonts.robotoCondensed(
-                        fontSize: 25,
+                    TextButton.icon(
+                      onPressed: () {
+                        Share.share(
+                            '${versiculo.referencia} \n${versiculo.versiculos} \nObrigado Por usar o Versiculo Diário!',
+                            sharePositionOrigin:
+                                box.localToGlobal(Offset.zero) & box.size);
+                      },
+                      label: Text(''),
+                      icon: Icon(
+                        CommunityMaterialIcons.share_all,
                         color: txtColor,
                       ),
-                      maxLines: 12,
-                      overflow: TextOverflow.ellipsis,
+                    ),
+                    TextButton(
+                      style: ButtonStyle(
+                        visualDensity: VisualDensity.adaptivePlatformDensity,
+                      ),
+                      onPressed: () {
+                        Get.dialog(SafeArea(
+                          child: Scaffold(
+                            appBar: AppBar(
+                              title: Text(
+                                  '${controller.listPalavraPaginada[index].titulo}'),
+                              centerTitle: true,
+                            ),
+                            body: Container(
+                              padding: EdgeInsets.all(10),
+                              child: ListView(
+                                children: [
+                                  Text(
+                                    '${versiculo.versiculos}',
+                                    style: GoogleFonts.poppins(
+                                      fontSize: 18,
+                                      color: txtSecundColor,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                  Row(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        Text(
+                                          '${versiculo.referencia}',
+                                          style: GoogleFonts.poppins(
+                                            fontSize: 14,
+                                            color: txtSecundColor,
+                                            fontWeight: FontWeight.w600,
+                                          ),
+                                        )
+                                      ]),
+                                  CustomDivider(),
+                                  Column(children: [
+                                    Text(
+                                      '${controller.listPalavraPaginada[index].palavras}',
+                                      style: GoogleFonts.poppins(
+                                        fontSize: 25,
+                                        color: txtSecundColor,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ]),
+                                  CustomDivider(),
+                                  Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          'Autor: ${controller.listPalavraPaginada[index].autor}',
+                                          style: GoogleFonts.poppins(
+                                            fontSize: 18,
+                                            color: txtSecundColor,
+                                            fontWeight: FontWeight.w600,
+                                          ),
+                                        ),
+                                      ])
+                                ],
+                              ),
+                            ),
+                          ),
+                        ));
+                      },
+                      child: Text(
+                        'Palavra',
+                        style: GoogleFonts.poppins(
+                          color: txtColor,
+                        ),
+                      ),
                     ),
                   ],
                 ),
-              ),
-            );
-          },
-          child: Container(
-            margin: EdgeInsets.only(bottom: 10),
-            padding: EdgeInsets.all(10),
-            height: tamanho,
-            decoration: BoxDecoration(
-              color: appTheme.accentColor,
-              borderRadius: BorderRadius.all(Radius.circular(10)),
-            ),
-            child: Column(
-              children: [
-                Container(
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                titleStyle: TextStyle(color: txtColor),
+                backgroundColor: appTheme.accentColor,
+                content: Container(
+                  padding: EdgeInsets.all(5),
+                  child: Column(
                     children: [
                       CustomText(
                         text: '${versiculo.referencia}',
-                        cor: txtDraweColor,
+                        cor: txtColor,
                         tFont: 18,
                       ),
-                      CustomText(
-                        text: '${versiculo.data}',
-                        cor: txtDraweColor,
-                        tFont: 18,
+                      SizedBox(height: 5),
+                      Text(
+                        '${versiculo.versiculos}',
+                        style: GoogleFonts.robotoCondensed(
+                          fontSize: 25,
+                          color: txtColor,
+                        ),
+                        maxLines: 12,
+                        overflow: TextOverflow.ellipsis,
                       ),
                     ],
                   ),
                 ),
-                SizedBox(height: 5),
-                Center(
-                  child: Text(
-                    '${versiculo.versiculos}',
-                    style: GoogleFonts.robotoCondensed(
-                      color: txtColor,
-                      fontSize: 20.5,
-                      fontWeight: FontWeight.w600,
+              );
+            },
+            child: Container(
+              margin: EdgeInsets.only(bottom: 10),
+              padding: EdgeInsets.all(10),
+              height: tamanho,
+              decoration: BoxDecoration(
+                color: appTheme.accentColor,
+                borderRadius: BorderRadius.all(Radius.circular(10)),
+              ),
+              child: Column(
+                children: [
+                  Container(
+                    padding: EdgeInsets.all(10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        CustomText(
+                          text: '${versiculo.referencia}',
+                          cor: txtColor,
+                          tFont: 18,
+                        ),
+                        CustomText(
+                          text: '${versiculo.data}',
+                          cor: txtColor,
+                          tFont: 18,
+                        ),
+                      ],
                     ),
-                    overflow: TextOverflow.ellipsis,
-                    maxLines: 2,
                   ),
-                ),
-              ],
+                  SizedBox(height: 5),
+                  Center(
+                    child: Text(
+                      '${versiculo.versiculos}',
+                      style: GoogleFonts.robotoCondensed(
+                        color: txtColor,
+                        fontSize: 20.5,
+                        fontWeight: FontWeight.w600,
+                      ),
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 2,
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
-        );
-      },
-    );
+          );
+        },
+      );
+    }
   }
 }
